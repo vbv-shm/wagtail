@@ -12,7 +12,7 @@ file_listing = subprocess.Popen(
 
 for file_listing_line in file_listing.stdout:
     filename = file_listing_line.strip()
-
+    print("hello")
     # extract locale string from filename
     locale = re.search(r"locale/(\w+)/LC_MESSAGES", str(filename)).group(1)
     if locale == "en":
