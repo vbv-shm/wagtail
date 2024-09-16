@@ -22,7 +22,8 @@ class PasswordViewRestrictionForm(forms.Form):
             )
 
         return data
-
+    def someFunction():
+        pass
 
 class TaskStateCommentForm(forms.Form):
     comment = forms.CharField(
